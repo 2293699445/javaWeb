@@ -42,7 +42,6 @@ public class DeptListServlet extends HttpServlet {
         out.println("            <th>序号</th>");
         out.println("            <th>部门编号</th>");
         out.println("            <th>部门名称</th>");
-        out.println("            <th>位置</th>");
         out.println("            <th>操作</th>");
         out.println("        </tr>");
         out.println("<!--以上是静态数据-->");
@@ -69,7 +68,6 @@ public class DeptListServlet extends HttpServlet {
                 out.println("            <td>"+(++i)+"</td>");
                 out.println("            <td>"+deptno+"</td>");
                 out.println("            <td>"+dname+"</td>");
-                out.println("            <td>"+loc+"</td>");
                 out.println("            <td>");
                 out.println("                <a href='"+path+"/dept/delete?delete="+deptno+"'>删除</a>");
                 out.println("                <a href='"+path+"/dept/edit'>修改</a>");
